@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Form title</h1>
+        <p id="description">Short explanation</p>
+        <form id="survey-form" action="/submit-form" method="GET">
+            <p id="name">First, what is your name: <input type="text" id="name-label" placeholder="Enter your name here"></p><br>
+            <p id="email">Email address: <input type="email" id="email-label" placeholder="Enter your email address here"></p><br>
+            <p id="number">Phone number: <input type="number" id="number-label" minlength="10" maxlength="11" placeholder="Enter your phone number with area code"></p><br>
+            
+            <p>Now, which Pokémon do you want?<br>
+            <select id="dropdown">
+                <option value="charmander">Charmander</option>
+                <option value="squirtle">Squirtle</option>
+                <option value="bulbasaur">Bulbasaur</option>
+            </select></p>
+            
+            <p>Where are you from?<br>
+            <input type="radio" name="city" value="pallet"> Pallet
+            <input type="radio" name="city" value="viridian"> Viridian
+            <input type="radio" name="city" value="pewter"> Pewter
+            <input type="radio" name="city" value="cerulean"> Cerulean
+            <input type="radio" name="city" value="vermillion"> Vermillion
+            <input type="radio" name="city" value="lavender"> Lavender
+            <input type="radio" name="city" value="celadon"> Celadon
+            <input type="radio" name="city" value="fuchsia"> Fuchsia
+            <input type="radio" name="city" value="saffron"> Saffron
+            <input type="radio" name="city" value="cinnabar"> Cinnabar</p>
+            
+            <p>Enter the badges you already own:<br>
+            <input type="checkbox" value="boulder"> Boulder
+            <input type="checkbox" value="cascade"> Cascade
+            <input type="checkbox" value="thunder"> Thunder
+            <input type="checkbox" value="rainbow"> Rainbow
+            <input type="checkbox" value="soul"> Soul
+            <input type="checkbox" value="marsh"> Marsh
+            <input type="checkbox" value="volcano"> Volcano
+            <input type="checkbox" value="earth"> Earth
+            </p>
+
+            <p>Send your message to your fans:<br>
+            <textarea  rows="5" cols="50">Be nice - remember, there are children reading it!</textarea>
+            </p>
+
+            <input type="button" id="submit" value="Submit">
+        </form>
+    </body>
+</html>
