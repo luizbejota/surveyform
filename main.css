@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Playfair+Display');
+
+body {
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    font-family: 'Muli', sans-serif;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}

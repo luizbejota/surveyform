@@ -1,46 +1,54 @@
-<html>
-    <head>
-        <title>Survey Form</title>
-    </head>
-    <body>
-        <h1 id="title">Survey Form title</h1>
-        <p id="description">Short explanation</p>
+<!DOCTYPE <!DOCTYPE html>
+<html lang="EN">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokémon survey | Gotta catch 'em all!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="main.js"></script>
+</head>
+<body>
+    <nav class="form-group">
+        <h1 id="title">The great Pokémon survey</h1>
+        <p id="description">Fill the form below to enroll to our fanclub</p>
         <form id="survey-form" action="/submit-form" method="GET">
-            <p id="name">First, what is your name: <input type="text" id="name-label" placeholder="Enter your name here"></p><br>
-            <p id="email">Email address: <input type="email" id="email-label" placeholder="Enter your email address here"></p><br>
-            <p id="number">Phone number: <input type="number" id="number-label" minlength="10" maxlength="11" placeholder="Enter your phone number with area code"></p><br>
-            
-            <p>Now, which Pokémon do you want?<br>
-            <select id="dropdown">
+            <p id="name"><strong>Name:</strong><br><input class="form-control" type="text" id="name-label" placeholder="Enter your name here"></p>
+            <p id="email"><strong>Email address:</strong><br><input class="form-control" type="email" id="email-label" placeholder="Enter your email address here"></p>
+            <p id="number"><strong>Phone number:</strong><br><input class="form-control" type="number" id="number-label" minlength="10" maxlength="11" placeholder="Enter your phone number with area code"></p>
+    </nav>
+            <p><strong>Now, which Pokémon do you want?</strong><br>
+            <select class="custom-select" id="dropdown">
                 <option value="charmander">Charmander</option>
                 <option value="squirtle">Squirtle</option>
                 <option value="bulbasaur">Bulbasaur</option>
             </select></p>
             
-            <p>Where are you from?<br>
-            <input type="radio" name="city" value="pallet"> Pallet
-            <input type="radio" name="city" value="viridian"> Viridian
-            <input type="radio" name="city" value="pewter"> Pewter
-            <input type="radio" name="city" value="cerulean"> Cerulean
-            <input type="radio" name="city" value="vermillion"> Vermillion
-            <input type="radio" name="city" value="lavender"> Lavender
-            <input type="radio" name="city" value="celadon"> Celadon
-            <input type="radio" name="city" value="fuchsia"> Fuchsia
-            <input type="radio" name="city" value="saffron"> Saffron
-            <input type="radio" name="city" value="cinnabar"> Cinnabar</p>
-            
-            <p>Enter the badges you already own:<br>
-            <input type="checkbox" value="boulder"> Boulder
-            <input type="checkbox" value="cascade"> Cascade
-            <input type="checkbox" value="thunder"> Thunder
-            <input type="checkbox" value="rainbow"> Rainbow
-            <input type="checkbox" value="soul"> Soul
-            <input type="checkbox" value="marsh"> Marsh
-            <input type="checkbox" value="volcano"> Volcano
-            <input type="checkbox" value="earth"> Earth
+        <nav class="form-check">
+            <p><strong>Where are you from?</strong><br>
+            <input class="form-check-input" type="radio" name="city" value="pallet"> Pallet
+            <input class="form-check-input" type="radio" name="city" value="viridian"> Viridian
+            <input class="form-check-input" type="radio" name="city" value="pewter"> Pewter
+            <input class="form-check-input" type="radio" name="city" value="cerulean"> Cerulean
+            <input class="form-check-input" type="radio" name="city" value="vermillion"> Vermillion
+            <input class="form-check-input" type="radio" name="city" value="lavender"> Lavender
+            <input class="form-check-input" type="radio" name="city" value="celadon"> Celadon
+            <input class="form-check-input" type="radio" name="city" value="fuchsia"> Fuchsia
+            <input class="form-check-input" type="radio" name="city" value="saffron"> Saffron
+            <input class="form-check-input" type="radio" name="city" value="cinnabar"> Cinnabar</p>
+        </nav>
+            <p><strong>Enter the badges you already own:</strong><br>
+            <input class="form-check-input" type="checkbox" value="boulder"> Boulder
+            <input class="form-check-input" type="checkbox" value="cascade"> Cascade
+            <input class="form-check-input" type="checkbox" value="thunder"> Thunder
+            <input class="form-check-input" type="checkbox" value="rainbow"> Rainbow
+            <input class="form-check-input" type="checkbox" value="soul"> Soul
+            <input class="form-check-input" type="checkbox" value="marsh"> Marsh
+            <input class="form-check-input" type="checkbox" value="volcano"> Volcano
+            <input class="form-check-input" type="checkbox" value="earth"> Earth
             </p>
 
-            <p>Send your message to your fans:<br>
+            <p><strong>Send your message to your fans:</strong><br>
             <textarea  rows="5" cols="50">Be nice - remember, there are children reading it!</textarea>
             </p>
 
